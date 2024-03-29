@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XXE Labs</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="header">
+    <a href="/" class="logo"><img src="logo.png">RedPanda - Security Labs</a>
+    <div class="header-right">
+        <a href="/">Home</a>
+        <a href="/xxe">XXE labs</a>
+        <a href="#about">About</a>
+    </div>
+</div>
+<br><br><br>
+
+Can you bypass this??? <br><br>
+
+if(xml.contains("DOCTYPE")){ <br>
+    return "Xxe4"; <br>
+}
+
+
+<br><br>
+
+
+<form method="post" id="testformid" action="/xxe4">
+    <input type="submit" />
+</form>
+<br>
+<textarea form ="testformid" name="xml" id="taid" rows="10" cols="70" wrap="soft">
+    <notes>
+        <note>
+            <to>Tove</to>
+            <from>Jani</from>
+            <heading>Reminder</heading>
+            <body>Don't forget me this weekend!</body>
+        </note>
+    </notes>
+
+</textarea>
+
+<br>
+<br>
+The document will be only processed by the backend!!!
+</body>
+</html>

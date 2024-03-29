@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XXE Labs</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="header">
+    <a href="/" class="logo"><img src="logo.png">RedPanda - Security Labs</a>
+    <div class="header-right">
+        <a href="/">Home</a>
+        <a href="/xxe">XXE labs</a>
+        <a href="#about">About</a>
+    </div>
+</div>
+<br><br><br>
+
+
+<form method="post" id="testformid" action="/xxe1">
+    <input type="submit" />
+</form>
+<br>
+<textarea form ="testformid" name="xml" id="taid" rows="10" cols="70" wrap="soft">
+    <notes>
+        <note>
+            <to>Tove</to>
+            <from>Jani</from>
+            <heading>Reminder</heading>
+            <body>Don't forget me this weekend!</body>
+        </note>
+    </notes>
+
+</textarea>
+
+<br>
+<br>
+<p th:text="|From: ${from}!|" />
+<br>
+<p th:text="|Body: ${body}!|" />
+
+</body>
+</html>
