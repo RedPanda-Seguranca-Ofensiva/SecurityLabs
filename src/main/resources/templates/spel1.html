@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpEL Labs</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div th:include="header"></div>
+<br><br><br>
+<div>
+Say my name!!! <br>
+
+</div>
+<br>
+<form method="post" action="/spel1">
+    <input type="text" name="expression" /><br><br>
+    <input type="submit" />
+</form>
+<br>
+<p th:text="|${name}!|" />
+<br>
+
+</body>
+</html>

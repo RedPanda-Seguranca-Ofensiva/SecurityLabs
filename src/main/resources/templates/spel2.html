@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpEL Labs</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div th:include="header"></div>
+<br><br><br>
+<div>
+I have a strong filter now, You shall not pass!!! <br>
+
+    <textarea rows="10" cols="70">
+if(expression.contains("Runtime")){
+    model.addAttribute("name", "Runtime detected!!!");
+    return "spel2";
+}
+if(expression.contains("ProcessBuilder")){
+    model.addAttribute("name", "ProcessBuilder detected!!!");
+    return "spel2";
+}
+    </textarea>
+
+</div>
+<br>
+Give me your input!!! <br>
+<form method="post" action="/spel2">
+    <input type="text" name="expression" /><br><br>
+    <input type="submit" />
+</form>
+<br>
+<p th:text="|${name}!|" />
+<br>
+
+</body>
+</html>
