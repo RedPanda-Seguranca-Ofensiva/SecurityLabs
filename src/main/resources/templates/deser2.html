@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deserialization Labs</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div th:include="header"></div>
+<br><br><br>
+<div>
+    Here you can create a secret blog (we do not store it on disk) <br>
+    PS: I also add some filters, you cannot call you magic class now.
+
+</div>
+<br>
+<form method="post" action="/deser2">
+    Title: <input type="text" name="title" /><br>
+    Body: <input type="text" name="body" /><br>
+    <input type="submit" />
+</form>
+<br>
+<p th:text="|Title: ${title}!|" />
+<br>
+
+<p th:text="|Content: ${body}!|" />
+<br>
+
+
+</body>
+</html>

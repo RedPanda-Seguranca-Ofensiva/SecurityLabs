@@ -1,3 +1,11 @@
 net/redpandasec/labs/Controllers/IndexController.class
-net/redpandasec/labs/LabsApplication.class
+net/redpandasec/labs/Controllers/DeserializationController.class
+net/redpandasec/labs/Classes/Blog.class
+net/redpandasec/labs/Classes/Evil2.class
 net/redpandasec/labs/Controllers/XxeController.class
+net/redpandasec/labs/Classes/Evil1.class
+net/redpandasec/labs/Classes/Utils.class
+net/redpandasec/labs/Classes/Evil3.class
+net/redpandasec/labs/Controllers/SpelController.class
+net/redpandasec/labs/LabsApplication.class
+net/redpandasec/labs/Classes/Gadget2.class
