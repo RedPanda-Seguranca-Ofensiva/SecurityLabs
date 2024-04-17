@@ -5,6 +5,7 @@ net/redpandasec/labs/Classes/Evil2.class
 net/redpandasec/labs/Controllers/XxeController.class
 net/redpandasec/labs/Classes/Evil1.class
 net/redpandasec/labs/Classes/Utils.class
+net/redpandasec/labs/Controllers/SstiController.class
 net/redpandasec/labs/Classes/Evil3.class
 net/redpandasec/labs/Controllers/SpelController.class
 net/redpandasec/labs/LabsApplication.class

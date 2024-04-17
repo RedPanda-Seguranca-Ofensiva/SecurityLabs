@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SSTI Labs</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div th:include="header"></div>
+<br><br><br>
+<div>
+  Who are you? <br>
+
+</div>
+
+<br>
+<p th:text="|${message}!|" />
+<br>
+
+</body>
+</html>
