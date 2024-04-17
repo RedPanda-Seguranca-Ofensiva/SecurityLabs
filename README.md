@@ -3,7 +3,11 @@ RedPanda Security Labs é uma aplicação web desenvolvida em Sping Boot.
 A ideia é juntar várias vulnerabilidades e criar laboratórios de exploração
 para ajudar a estudantes de Segurança Web e revisão de código.
 
-## Instalação
+## Instalação via DockerHub
+A instalação pode ser feita via dockerhub acessando o seguinte link
+https://hub.docker.com/r/c4v4r0n/redpandalab
+
+## Instalação Manual
 Executar a aplicação em docker é extremamente fácil, os seguintes comandos devem ser o suficiente para
 iniciar a aplicação usando docker e buildx.
 
